@@ -1,0 +1,489 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color:  #800000; 
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cottage-image {
+    width: 400px;
+}
+
+.section {
+    margin: 50px auto;
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+/* CSS for the two-column layout */
+.column {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+/* Clearfix to contain the floated columns */
+.section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Styles for the form fields in the columns */
+.column form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.column form input[type="text"],
+.column form input[type="number"],
+.column form input[type="date"],
+.column form select {
+    width: 100%; /* Adjust width if necessary */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the form section heading */
+#basic-info h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Style for the submit button */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000; /* Reddish-brown color for the button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Center align text */
+}
+
+.submit-button:hover {
+    background-color: #5a0000; /* Darker shade of red on hover */
+}
+
+/* Communication Section */
+#communication {
+    display: none; /* Initially hide the section */
+}
+
+#communication h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#communication .column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#communication .column {
+    width: 48%; /* Adjust width if needed */
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+#communication-form-column1 label,
+#communication-form-column2 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#communication-form-column1 input[type="text"],
+#communication-form-column2 input[type="text"],
+#communication-form-column1 input[type="email"],
+#communication-form-column2 input[type="url"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#communication-form-column1 input[type="text"]:focus,
+#communication-form-column2 input[type="text"]:focus,
+#communication-form-column1 input[type="email"]:focus,
+#communication-form-column2 input[type="url"]:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight color on focus */
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000; /* Red color for the button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #5a0000; /* Darker red color on hover */
+}
+/* Styles for the Invoicing section */
+#invoicing {
+    display: none; /* Initially hide the section */
+}
+
+#invoicing h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Styles for the two-column layout */
+#invoicing .column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#invoicing .column {
+    width: 48%; /* Adjust width if needed */
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+/* Styles for the form fields in the columns */
+#invoicing form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#invoicing form input[type="text"],
+#invoicing form input[type="email"],
+#invoicing form input[type="url"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#invoicing button.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000; /* Red color for the submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#invoicing button.submit-button:hover {
+    background-color: #5a0000; /* Darker red color on hover */
+}
+/* Styles for the Payment section */
+#payment {
+    display: none; /* Initially hide the section */
+}
+
+#payment h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Styles for the two-column layout */
+#payment .column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#payment .column {
+    width: 48%; /* Adjust width if needed */
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+/* Styles for the form fields in the columns */
+#payment form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#payment form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#payment button.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000; /* Red color for the submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#payment button.submit-button:hover {
+    background-color: #5a0000; /* Darker red color on hover */
+}
+/* Styles for the Receiving section */
+#receiving {
+    display: none; /* Initially hide the section */
+}
+
+#receiving h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Styles for the two-column layout */
+#receiving .column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#receiving .column {
+    width: 48%; /* Adjust width if needed */
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+/* Styles for the form fields in the columns */
+#receiving form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#receiving form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#receiving button.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000; /* Red color for the submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#receiving button.submit-button:hover {
+    background-color: #5a0000; /* Darker red color on hover */
+}
+/* Styles for the Foreign Trade section */
+#foreign-trade {
+    display: none; /* Initially hide the section */
+}
+
+#foreign-trade h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Styles for the two-column layout */
+#foreign-trade .column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#foreign-trade .column {
+    width: 48%; /* Adjust width if needed */
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+/* Styles for the form fields in the columns */
+#foreign-trade form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#foreign-trade form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#foreign-trade button.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000; /* Red color for the submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#foreign-trade button.submit-button:hover {
+    background-color: #5a0000; /* Darker red color on hover */
+}
+/* Styles for the Tax Information section */
+#tax-information {
+    display: none; /* Initially hide the section */
+}
+
+#tax-information h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Styles for the two-column layout */
+#tax-information .column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tax-information .column {
+    width: 48%; /* Adjust width if needed */
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+/* Styles for the form fields in the columns */
+#tax-information form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#tax-information form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#tax-information button.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000; /* Red color for the submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tax-information button.submit-button:hover {
+    background-color: #5a0000; /* Darker red color on hover */
+}
+/* Styles for the CCIC section */
+#ccic {
+    display: none; /* Initially hide the section */
+}
+
+#ccic h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Styles for the two-column layout */
+#ccic .column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ccic .column {
+    width: 48%; /* Adjust width if needed */
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+/* Styles for the form fields in the columns */
+#ccic form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#ccic form input[type="text"],
+#ccic form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#ccic button.submit-button {
+    width: 90%;
+    padding: 10px;
+    background-color: #800000; /* Red color for the submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ccic button.submit-button:hover {
+    background-color: #5a0000; /* Darker red color on hover */
+}
+/* Styles for the sign-out button */
+#sign-out-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+

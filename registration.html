@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header>
+        <img src="cottage.png" alt="Cottage Image" class="cottage-image">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('general')">General</a></li>
+                <li><a href="#" onclick="showSection('communication')">Communication</a></li>
+                <li><a href="#" onclick="showSection('invoicing')">Invoicing</a></li>
+                <li><a href="#" onclick="showSection('payment')">Payment</a></li>
+                <li><a href="#" onclick="showSection('receiving')">Receiving</a></li>
+                <li><a href="#" onclick="showSection('foreign-trade')">Foreign Trade</a></li>
+                <li><a href="#" onclick="showSection('tax-information')">Tax Information</a></li>
+                <li><a href="#" onclick="showSection('ccic')">CCIC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="general" class="section">
+        <h2>General Information</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="general-form-column1">
+                    <label for="no_entry">No.:</label>
+                    <input type="text" id="no_entry" name="no_entry">
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                                                
+                    <label for="name_entry">Name:</label>
+                    <input type="text" id="name_entry" name="name_entry">
+                                                
+                    <label for="name_2_entry">Name 2:</label>
+                    <input type="text" id="name_2_entry" name="name_2_entry">
+                                                
+                    <label for="address_entry">Address:</label>
+                    <input type="text" id="address_entry" name="address_entry">
+                                                
+                    <label for="address_2_entry">Address 2:</label>
+                    <input type="text" id="address_2_entry" name="address_2_entry">
+                                                
+                    <label for="post_code_city_entry">Post Code/City:</label>
+                    <input type="text" id="post_code_city_entry" name="post_code_city_entry">
+                                                
+                    <label for="country_region_code_entry">Country/Region Code:</label>
+                    <input type="text" id="country_region_code_entry" name="country_region_code_entry">
+                                                
+                    <label for="state_code_entry">State Code:</label>
+                    <input type="text" id="state_code_entry" name="state_code_entry">
+                                                
+                    <label for="phone_no_entry">Phone No.:</label>
+                    <input type="text" id="phone_no_entry" name="phone_no_entry">
+                                                
+                    <label for="primary_contact_no_entry">Primary Contact No.:</label>
+                    <input type="text" id="primary_contact_no_entry" name="primary_contact_no_entry">
+                                                
+                    <label for="mobile_no_entry">Mobile No.:</label>
+                    <input type="text" id="mobile_no_entry" name="mobile_no_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="general-form-column2">
+                    <label for="search_name_entry">Search Name:</label>
+                    <input type="text" id="search_name_entry" name="search_name_entry">
+                                
+                    <label for="security_deposit_balance_entry">Security Deposit Balance:</label>
+                    <input type="text" id="security_deposit_balance_entry" name="security_deposit_balance_entry">
+                                
+                    <label for="balance_lcy_entry">Balance (LCY):</label>
+                    <input type="text" id="balance_lcy_entry" name="balance_lcy_entry">
+                                
+                    <label for="purchaseer_code_entry">Purchaseer Code:</label>
+                    <input type="text" id="purchaseer_code_entry" name="purchaseer_code_entry">
+                                
+                    <label for="responsibility_center_entry">Responsibility Center:</label>
+                    <input type="text" id="responsibility_center_entry" name="responsibility_center_entry">
+                                
+                    <label for="blocked_entry">Blocked:</label>
+                    <input type="text" id="blocked_entry" name="blocked_entry">
+                                
+                    <label for="last_date_modified_entry">Last Date Modified:</label>
+                    <input type="date" id="last_date_modified_entry" name="last_date_modified_entry">
+                                
+                    <label for="transporter_entry">Transporter:</label>
+                    <input type="text" id="transporter_entry" name="transporter_entry">
+                                
+                    <label for="fabricator_entry">Fabricator:</label>
+                    <input type="text" id="fabricator_entry" name="fabricator_entry">
+                                
+                    <label for="duplicate_pan_no_entry">Duplicate PAN No.:</label>
+                    <input type="text" id="duplicate_pan_no_entry" name="duplicate_pan_no_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+
+    <div id="communication" class="section">
+        <h2>Communication</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="communication-form-column1">
+                    <label for="phone_no_entry">Phone No.:</label>
+                    <input type="text" id="phone_no_entry" name="phone_no_entry">
+                                    
+                    <label for="fax_no_entry">Fax No.:</label>
+                    <input type="text" id="fax_no_entry" name="fax_no_entry">
+                                    
+                    <label for="email_entry">Email:</label>
+                    <input type="email" id="email_entry" name="email_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="communication-form-column2">
+                    <label for="home_page_entry">Home Page:</label>
+                    <input type="url" id="home_page_entry" name="home_page_entry">
+                                    
+                    <label for="ic_partner_code_entry">IC Partner Code:</label>
+                    <input type="text" id="ic_partner_code_entry" name="ic_partner_code_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+
+    <div id="invoicing" class="section">
+        <h2>Invoicing</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="invoicing-form-column1">
+                    <label for="pay_to_vendor_entry">Pay to Vendor:</label>
+                    <input type="text" id="pay_to_vendor_entry" name="pay_to_vendor_entry">
+    
+                    <label for="tax_liable_entry">Tax Liable:</label>
+                    <input type="text" id="tax_liable_entry" name="tax_liable_entry">
+    
+                    <label for="structure_entry">Structure:</label>
+                    <input type="text" id="structure_entry" name="structure_entry">
+    
+                    <label for="gen_bus_posting_group_entry">General Business Posting Group:</label>
+                    <input type="text" id="gen_bus_posting_group_entry" name="gen_bus_posting_group_entry">
+    
+                    <label for="vat_bus_posting_group_entry">VAT Business Posting Group:</label>
+                    <input type="text" id="vat_bus_posting_group_entry" name="vat_bus_posting_group_entry">
+    
+                    <label for="excise_bus_posting_group_entry">Excise Business Posting Group:</label>
+                    <input type="text" id="excise_bus_posting_group_entry" name="excise_bus_posting_group_entry">
+    
+                    <label for="vendor_posting_group_entry">Vendor Posting Group:</label>
+                    <input type="text" id="vendor_posting_group_entry" name="vendor_posting_group_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="invoicing-form-column2">
+                    <label for="invoice_disc_code_entry">Invoice Discount Code:</label>
+                    <input type="text" id="invoice_disc_code_entry" name="invoice_disc_code_entry">
+    
+                    <label for="prices_including_vat_entry">Prices Including VAT:</label>
+                    <input type="text" id="prices_including_vat_entry" name="prices_including_vat_entry">
+    
+                    <label for="prepayment_percentage_entry">Prepayment %:</label>
+                    <input type="text" id="prepayment_percentage_entry" name="prepayment_percentage_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+    <div id="payment" class="section">
+        <h2>Payment</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="payment-form-column1">
+                    <label for="application_method_entry">Application Method:</label>
+                    <input type="text" id="application_method_entry" name="application_method_entry">
+                    
+                    <label for="payment_terms_code_entry">Payment Terms Code:</label>
+                    <input type="text" id="payment_terms_code_entry" name="payment_terms_code_entry">
+                    
+                    <label for="payment_method_code_entry">Payment Method Code:</label>
+                    <input type="text" id="payment_method_code_entry" name="payment_method_code_entry">
+                    
+                    <label for="priority_entry">Priority:</label>
+                    <input type="text" id="priority_entry" name="priority_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="payment-form-column2">
+                    <label for="our_account_no_entry">Our Account No.:</label>
+                    <input type="text" id="our_account_no_entry" name="our_account_no_entry">
+                    
+                    <label for="block_payment_tolerance_entry">Block Payment Tolerance:</label>
+                    <input type="text" id="block_payment_tolerance_entry" name="block_payment_tolerance_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+    <div id="receiving" class="section">
+        <h2>Receiving</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="receiving-form-column1">
+                    <label for="location_code_entry">Location Code:</label>
+                    <input type="text" id="location_code_entry" name="location_code_entry">
+                    
+                    <label for="shipment_method_code_entry">Shipment Method Code:</label>
+                    <input type="text" id="shipment_method_code_entry" name="shipment_method_code_entry">
+                    
+                    <label for="lead_time_calculation_entry">Lead Time Calculation:</label>
+                    <input type="text" id="lead_time_calculation_entry" name="lead_time_calculation_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="receiving-form-column2">
+                    <label for="base_calendar_code_entry">Base Calendar Code:</label>
+                    <input type="text" id="base_calendar_code_entry" name="base_calendar_code_entry">
+                    
+                    <label for="customized_calendar_entry">Customized Calendar:</label>
+                    <input type="text" id="customized_calendar_entry" name="customized_calendar_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+    <div id="foreign-trade" class="section">
+        <h2>Foreign Trade</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="foreign-trade-form-column1">
+                    <label for="currency_code_entry">Currency Code:</label>
+                    <input type="text" id="currency_code_entry" name="currency_code_entry">
+                    
+                    <label for="language_code_entry">Language Code:</label>
+                    <input type="text" id="language_code_entry" name="language_code_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="foreign-trade-form-column2">
+                    <label for="vat_registration_no_entry">VAT Registration No:</label>
+                    <input type="text" id="vat_registration_no_entry" name="vat_registration_no_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+    <div id="tax-information" class="section">
+        <h2>Tax Information</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="tax-information-form-column1">
+                    <label for="lst_no_entry">L.S.T. No.:</label>
+                    <input type="text" id="lst_no_entry" name="lst_no_entry">
+                    
+                    <label for="cst_no_entry">C.S.T. No.:</label>
+                    <input type="text" id="cst_no_entry" name="cst_no_entry">
+                    
+                    <label for="ecc_no_entry">E.C.C. No.:</label>
+                    <input type="text" id="ecc_no_entry" name="ecc_no_entry">
+                    
+                    <label for="range_entry">Range:</label>
+                    <input type="text" id="range_entry" name="range_entry">
+                    
+                    <label for="collectorate_entry">Collectorate:</label>
+                    <input type="text" id="collectorate_entry" name="collectorate_entry">
+                    
+                    <label for="vendor_type_entry">Vendor Type:</label>
+                    <input type="text" id="vendor_type_entry" name="vendor_type_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="tax-information-form-column2">
+                    <label for="tin_no_entry">T.I.N. No.:</label>
+                    <input type="text" id="tin_no_entry" name="tin_no_entry">
+                    
+                    <label for="gst_registration_no_entry">GST Registration No.:</label>
+                    <input type="text" id="gst_registration_no_entry" name="gst_registration_no_entry">
+                    
+                    <label for="gst_vendor_type_entry">GST Vendor Type:</label>
+                    <input type="text" id="gst_vendor_type_entry" name="gst_vendor_type_entry">
+                    
+                    <label for="pan_no_entry">P.A.N. No.:</label>
+                    <input type="text" id="pan_no_entry" name="pan_no_entry">
+                    
+                    <label for="pan_status_entry">P.A.N. Status:</label>
+                    <input type="text" id="pan_status_entry" name="pan_status_entry">
+                    
+                    <label for="pan_reference_no_entry">P.A.N. Reference No.:</label>
+                    <input type="text" id="pan_reference_no_entry" name="pan_reference_no_entry">
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <form id="tax-information-form-column3">
+                <label for="gta_entry">GTA:</label>
+                <input type="text" id="gta_entry" name="gta_entry">
+                
+                <label for="service_tax_registration_no_entry">Service Tax Registration:</label>
+                <input type="text" id="service_tax_registration_no_entry" name="service_tax_registration_no_entry">
+                
+                <label for="subcontractor_entry">Subcontractor:</label>
+                <input type="text" id="subcontractor_entry" name="subcontractor_entry">
+                
+                <label for="vendor_location_entry">Vendor Location:</label>
+                <input type="text" id="vendor_location_entry" name="vendor_location_entry">
+                
+                <label for="commissioner_permission_entry">Commissioner's Permission:</label>
+                <input type="text" id="commissioner_permission_entry" name="commissioner_permission_entry">
+            </form>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+    <div id="ccic" class="section">
+        <h2>CCIC</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="ccic-form-column1">
+                    <label for="vendor_categories_entry">Vendor Categories:</label>
+                    <input type="text" id="vendor_categories_entry" name="vendor_categories_entry">
+                    
+                    <label for="vendor_credit_limit_entry">Vendor Credit Limit:</label>
+                    <input type="text" id="vendor_credit_limit_entry" name="vendor_credit_limit_entry">
+                    
+                    <label for="award_type_entry">Award Type:</label>
+                    <input type="text" id="award_type_entry" name="award_type_entry">
+                    
+                    <label for="awardee_entry">Awardee:</label>
+                    <input type="text" id="awardee_entry" name="awardee_entry">
+                    
+                    <label for="starting_date_ccic_entry">Starting Date of CCIC:</label>
+                    <input type="date" id="starting_date_ccic_entry" name="starting_date_ccic_entry">
+
+                    <label for="district_entry">District:</label>
+                    <input type="text" id="district_entry" name="district_entry">
+                    
+                    <label for="three_year_purchase_entry">Three Year Purchase:</label>
+                    <input type="text" id="three_year_purchase_entry" name="three_year_purchase_entry">
+                    
+                    <label for="operative_payment_entry">Operative Payment:</label>
+                    <input type="text" id="operative_payment_entry" name="operative_payment_entry">
+                    
+                    <label for="gender_entry">Gender:</label>
+                    <input type="text" id="gender_entry" name="gender_entry">
+                    
+                    <label for="original_state_entry">Original State:</label>
+                    <input type="text" id="original_state_entry" name="original_state_entry">
+
+                    <label for="msme_entry">MS/ME:</label>
+                    <input type="text" id="msme_entry" name="msme_entry">
+                    
+                    <label for="msme_type_entry">MS/ME Type:</label>
+                    <input type="text" id="msme_type_entry" name="msme_type_entry">
+                    
+                    <label for="msme_registration_no_entry">MS/ME Registration No.:</label>
+                    <input type="text" id="msme_registration_no_entry" name="msme_registration_no_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="ccic-form-column2">
+                    <label for="concessionaire_vendor_entry">Concessionaire Vendor:</label>
+                    <input type="text" id="concessionaire_vendor_entry" name="concessionaire_vendor_entry">
+                    <label for="vendor_commission_entry">Vendor Commission %:</label>
+                    <input type="text" id="vendor_commission_entry" name="vendor_commission_entry">
+                
+                    <label for="esc_payment_entry">ESC Payment:</label>
+                    <input type="text" id="esc_payment_entry" name="esc_payment_entry">
+                
+                    <label for="minority_entry">Minority:</label>
+                    <input type="text" id="minority_entry" name="minority_entry">
+                
+                    <label for="minority_type_entry">Minority Type:</label>
+                    <input type="text" id="minority_type_entry" name="minority_type_entry">
+                
+                    <label for="caste_entry">Caste:</label>
+                    <input type="text" id="caste_entry" name="caste_entry">
+                
+                    <label for="old_sims_code_entry">Old SIMS Code:</label>
+                    <input type="text" id="old_sims_code_entry" name="old_sims_code_entry">
+                
+                    <label for="old_subcode_entry">Old Subcode:</label>
+                    <input type="text" id="old_subcode_entry" name="old_subcode_entry">
+                
+                    <label for="license_fee_entry">License Fee %:</label>
+                    <input type="text" id="license_fee_entry" name="license_fee_entry">
+            </form>
+        </div>
+    </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>    
+    <script src="registration.js"></script>
+</body>
+</html>
